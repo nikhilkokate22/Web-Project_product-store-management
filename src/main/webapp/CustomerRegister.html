@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Registration</title>
+<style>
+/* Reset some default styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style the container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+/* Style the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the heading */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Customer Registration</h2>
+    <form action="custReg" method="post">
+        <label>Phone No.</label>
+        <input type="text" name="custRegMo">
+
+        <label>Name</label>
+        <input type="text" name="custRegNm">
+
+        <label>City</label>
+        <input type="text" name="custRegCity">
+
+        <label>Email ID</label>
+        <input type="text" name="custMid">
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>
