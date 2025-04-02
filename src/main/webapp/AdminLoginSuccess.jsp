@@ -69,7 +69,7 @@ AdminBean ab = (AdminBean) session.getAttribute("abean");
     <div class="nav-links">
         <a href="Product.html">➕ Add Product</a>
         <a href="view">📋 View All Products</a>
-        <a href="Logout">🚪 Logout</a>
+        <a href="logout">🚪 Logout</a>
     </div>
 </div>
 

@@ -13,7 +13,8 @@ public class CustomerLoginServlet extends HttpServlet{
 		String uPh=req.getParameter("custpho");
 		CustomerBean cb = new CustomerLoginDAO().login(uPh);
 		if(cb==null) {
-			
+			req.setAttribute("msg", "Session Expired...<br>");
+			req.getRequestDispatcher("Msg.jsp").forward(req, res);
 		}
 		else {
 			HttpSession hs = req.getSession();

@@ -6,8 +6,8 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 @SuppressWarnings("serial")
-@WebServlet("/logout")
-public class AdminLogoutServlet extends HttpServlet{
+@WebServlet("/logout2")
+public class CustLogoutServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res)throws ServletException, IOException{
@@ -17,10 +17,10 @@ public class AdminLogoutServlet extends HttpServlet{
 			req.getRequestDispatcher("Msg.jsp").forward(req, res);
 		}
 		else {
-			hs.removeAttribute("abean");
-			hs.removeAttribute("alist");
+			hs.removeAttribute("cbean");
+			hs.removeAttribute("alist1");
 			req.setAttribute("msg","Logged Out Successfully..<br>");
-			req.getRequestDispatcher("AdminLogout.jsp").forward(req, res);
+			req.getRequestDispatcher("CustLogout.jsp").forward(req, res);
 		}
 	}
 }
